@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>/* styles.css */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="user" name="username" required>
+                <span id="s1"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="psw" name="password" required>
+                <span id="s2"></span>
+            </div>
+            <button onclick=" return get()" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+</body>
+<script>
+
+function get(){
+var  psw,user,s1, s2 ,b;
+   psw= document.getElementById("psw");
+   user= document.getElementById("user");
+    s1=document.getElementById("s1");
+    s2= document.getElementById("s2");
+    if(psw.value== ""){
+        s1.innerHTML="must be fill";
+    }else{
+
+    }s1.innerHTML="";
+    if(user.value ==""){
+        s2.innerHTML="must be fill";
+    }else{
+        s2.innerHTML="";
+    }
+    if((psw.value=="") || (user.value =="")){
+        b=false
+    }else{
+        b=true
+    } return b;
+}
+
+
+
+
+
+
+
+</script>
+
+</html>

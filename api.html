@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>username</th>
+                <th>website</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+    </table>
+
+
+    <tbody id="data">
+
+    </tbody>
+    <script>
+        async function get(){
+              let result = await fetch ("https://fakestoreapi.com/products")
+              result = await result.json();
+              console.log(result)
+              document.getElementById("data")((user)=>{
+        
+            
+              });
+        }
+        get()
+
+
+
+        
+
+    </script>
+</body>
+</html>
